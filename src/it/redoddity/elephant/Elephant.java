@@ -2,16 +2,21 @@ package it.redoddity.elephant;
 
 public class Elephant {
 
+	private boolean hungry = true;
+	private String name;
+	
 	public Elephant(String name) {
-		// TODO Auto-generated constructor stub
+		this.name = name;
 	}
 
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		if (hungry == true)
+			return true;
+		else
+			return false;
 	}
 
 	public void feed() {
-		// TODO Auto-generated method stub		
+		this.hungry = false;
 	}
 }

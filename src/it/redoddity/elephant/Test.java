@@ -14,4 +14,6 @@ public class Test {
 		if(!condition)
 			throw new RuntimeException("Mi aspettavo che qualcosa fosse vero, invece e' falso");
 	}
+	
+	
 }
