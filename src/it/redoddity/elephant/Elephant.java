@@ -1,22 +1,23 @@
 package it.redoddity.elephant;
 
 public class Elephant {
-
-	private boolean hungry = true;
-	private String name;
 	
-	public Elephant(String name) {
+	private Boolean feeded = false;
+	
+	private String name = null;
+
+	public Elephant(String name)
+	{
 		this.name = name;
 	}
 
-	public boolean isEmpty() {
-		if (hungry == true)
-			return true;
-		else
-			return false;
+	public boolean isEmpty()
+	{
+		return !this.feeded;
 	}
 
-	public void feed() {
-		this.hungry = false;
+	public void feed()
+	{
+		this.feeded = true;
 	}
 }
