@@ -1,17 +1,23 @@
 package it.redoddity.elephant;
 
 public class Elephant {
+	
+	private Boolean feeded = false;
+	
+	private String name = null;
 
-	public Elephant(String name) {
-		// TODO Auto-generated constructor stub
+	public Elephant(String name)
+	{
+		this.name = name;
 	}
 
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isEmpty()
+	{
+		return !this.feeded;
 	}
 
-	public void feed() {
-		// TODO Auto-generated method stub		
+	public void feed()
+	{
+		this.feeded = true;
 	}
 }
