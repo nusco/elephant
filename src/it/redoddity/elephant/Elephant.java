@@ -8,6 +8,9 @@ public class Elephant {
 	
 	private String name = null;
 
+	private Color color = Color.GRAY;
+	
+
 	public Elephant(String name)
 	{
 		this.name = name;
@@ -38,18 +41,18 @@ public class Elephant {
 		
 	}
 
-	public void setColor(Color green) {
-		// TODO Auto-generated method stub
-		
+	public void setColor(Color color)
+	{
+		this.color = color;
 	}
 
-	public Color getColor() {
-		// TODO Auto-generated method stub
-		return null;
+	public Color getColor()
+	{
+		return this.color;
 	}
 
-	public void kick() {
-		// TODO Auto-generated method stub
-		
+	public void kick()
+	{
+		this.setColor(Color.GREEN);
 	}
 }
