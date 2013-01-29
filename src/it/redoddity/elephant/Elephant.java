@@ -8,7 +8,7 @@ public class Elephant {
 	
 	private Boolean feeded = false;
 	
-	private String name = "Dumbo";
+	private String name = "dumbo";
 
 	private Color color = Color.GRAY;
 	
@@ -28,7 +28,16 @@ public class Elephant {
 	}
 
 	public String getName() {
-		return name;
+		
+		Character first=new Character(name.charAt(0));
+		
+		String one=""+first.toUpperCase(first);
+		
+		String finalname=name.substring(1);
+        finalname=finalname.toLowerCase();
+        String correctname=one+finalname;
+		
+		return correctname;
 	}
 	
 	public String toString() {
