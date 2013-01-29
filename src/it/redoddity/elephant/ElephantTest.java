@@ -66,5 +66,20 @@ public class ElephantTest {
 		e.kick();
 		assertEquals(Color.GREEN, e.getColor());
 	}
+	
+	@Test
+	public void testBecomesPinkWhenHugged() {
+		Elephant e = new Elephant("Dumbo");
+		e.hug();
+		assertEquals(Color.PINK, e.getColor());
+	}
+	
+	@Test
+	public void testBecomesGreyWhenHuggedAndKickedInASequence() {
+		Elephant e = new Elephant("Dumbo");
+		e.hug();
+		e.kick();
+		assertEquals(Color.GRAY, e.getColor());
+	}
 
 }

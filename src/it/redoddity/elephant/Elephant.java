@@ -58,4 +58,9 @@ public class Elephant {
 	{
 		this.setColor(Color.GREEN);
 	}
+
+	public void hug() {
+		// TODO Auto-generated method stub
+		
+	}
 }
