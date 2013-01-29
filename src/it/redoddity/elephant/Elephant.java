@@ -32,12 +32,11 @@ public class Elephant {
 	}
 
 	public int getWeight() {
-
 		return this.weight;
 	}
 
 	public void growOneYear() {
-		// TODO Auto-generated method stub
+		this.weight = this.weight + 50;
 		
 	}
 
