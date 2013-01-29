@@ -7,6 +7,8 @@ import java.awt.Color;
 import org.junit.Test;
 
 public class ElephantTest {
+	
+	
 	@Test
 	public void testFeed() {
 		Elephant e = new Elephant("Dumbo");
