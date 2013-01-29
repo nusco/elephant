@@ -1,17 +1,16 @@
 package it.redoddity.elephant;
 
 public class Elephant {
-
+	private boolean empty=true;
 	public Elephant(String name) {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return empty;
 	}
 
 	public void feed() {
-		// TODO Auto-generated method stub		
+		empty=false;
 	}
 }
