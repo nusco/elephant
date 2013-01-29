@@ -6,8 +6,8 @@ public class Elephant {
 	
 	private Boolean feeded = false;
 	
-	private String name = null;
-
+	private String name = "Dumbo";
+	
 	public Elephant(String name)
 	{
 		this.name = name;
@@ -24,8 +24,7 @@ public class Elephant {
 	}
 
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 
 	public int getWeight() {
