@@ -19,8 +19,13 @@ public class ElephantTest {
 
 	@Test
 	public void testName() {
-		Elephant e = new Elephant("Dumbo");
-		assertEquals("Dumbo", e.getName());
+		assertEquals("Dumbo", new Elephant("Dumbo").getName());
+		assertEquals("Dumbo", new Elephant("DUMBO").getName());
+		assertEquals("Dumbo", new Elephant("dumbo").getName());
+	}
+
+	@Test
+	public void testNameWrongCaps() {
 	}
 	
 	@Test
