@@ -88,7 +88,7 @@ public class ElephantTest {
 		e.tellAbout("Raise Against The Machine");
 		e.tellAbout("Pink Floyd");
 		assertTrue(e.rememberAbout("Pink Floyd"));
-		assertFalse(!e.rememberAbout("Arcade Fire"));
+		assertFalse(e.rememberAbout("Arcade Fire"));
 	}
 	
 }
