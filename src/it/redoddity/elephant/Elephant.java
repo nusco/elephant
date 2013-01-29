@@ -56,11 +56,33 @@ public class Elephant {
 
 	public void kick()
 	{
-		this.setColor(Color.GREEN);
+		if ( Color.PINK == this.getColor() ) // elephant has been hugged before
+		{
+			this.setColor(Color.GRAY);
+		}
+		else
+		{
+			this.setColor(Color.GREEN);
+		}
 	}
-
+/*
+    _.-- ,.--.
+  .'   .'    /
+  | @       |'..--------._
+ /      \._/              '.
+/  .-.-                     \
+(  /    \                     \
+\\      '.                  | #
+ \\       \   -.           /
+  :\       |    )._____.'   \
+           |   /  \  |  \    )
+           |   |./'  :__ \.-'
+           '--'
+	
+		by stephan
+ */
 	public void hug() {
-		// TODO Auto-generated method stub
+		this.setColor(Color.PINK);
 		
 	}
 
