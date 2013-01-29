@@ -12,6 +12,8 @@ public class Elephant {
 
 	private Color color = Color.GRAY;
 	
+	private String memory;
+	
 	public Elephant(String name)
 	{
 		this.name = name;
@@ -96,12 +98,14 @@ public class Elephant {
 	}
 
 	public void tellAbout(String topic) {
-		// TODO Auto-generated method stub
-		
+		memory = topic;
 	}
 
 	public boolean rememberAbout(String topic) {
-		// TODO Auto-generated method stub
-		return false;
+		if(memory == topic){
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
