@@ -26,6 +26,10 @@ public class Elephant {
 	public String getName() {
 		return name;
 	}
+	
+	public String toString() {
+		return name+":\n";	
+	}
 
 	public int getWeight() {
 		// TODO Auto-generated method stub
