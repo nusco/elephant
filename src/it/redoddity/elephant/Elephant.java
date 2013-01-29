@@ -4,6 +4,8 @@ import java.awt.Color;
 
 public class Elephant {
 	
+	private int weight = 100;
+	
 	private Boolean feeded = false;
 	
 	private String name = "Dumbo";
@@ -28,8 +30,8 @@ public class Elephant {
 	}
 
 	public int getWeight() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return this.weight;
 	}
 
 	public void growOneYear() {
