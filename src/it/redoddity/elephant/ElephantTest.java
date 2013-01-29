@@ -82,4 +82,13 @@ public class ElephantTest {
 		assertEquals(Color.GRAY, e.getColor());
 	}
 
+	@Test
+	public void testRemembersThings() {
+		Elephant e = new Elephant("Dumbo");
+		e.tellAbout("Raise Against The Machine");
+		e.tellAbout("Pink Floyd");
+		assertTrue(e.rememberAbout("Pink Floyd"));
+		assertFalse(!e.rememberAbout("Arcade Fire"));
+	}
+	
 }

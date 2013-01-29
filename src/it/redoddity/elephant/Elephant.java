@@ -63,4 +63,14 @@ public class Elephant {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void tellAbout(String topic) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean rememberAbout(String topic) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
